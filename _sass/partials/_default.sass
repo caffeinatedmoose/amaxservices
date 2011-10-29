@@ -1,10 +1,10 @@
 #header
 	:display block
-	:background-color rgba(146, 0, 0, 0.5)
+	:background-color rgba(9, 10, 92, 0.5)
 	:text-align left
 	:width 66%
 	:height 2.2em
-	:margin-bottom 8em
+	:margin-bottom 5em
 	:padding-bottom 2px
 	:padding-left 10px
 	:padding-top 2px
@@ -13,22 +13,12 @@
 	+border-top-right-radius(1em)
 	+border-bottom-right-radius(12em)
 	&:hover
-		:background-color rgba(146, 0, 0, 0.8)
+		:background-color rgba(9, 12, 92, 0.8)
 	
-#title	
+#title
 	:color white
 	:font 25px helvetica nueve, clean, sans-serif !important
 		:size large
-	:text-shadow 1px 2px #ff0000
-
-
-#nav
-	:position relative
-	:left 5em
-	:z-index 2
-	:display inline
-	span
-		:padding-left 1em
 
 .content
 	:background-color rgba(200, 200, 200, .7)
@@ -41,30 +31,40 @@
 	+border-top-right-radius(2em)
 	+border-bottom-left-radius(0.5em)
 	+border-bottom-right-radius(0.5em)
-	
+
 .info
 	:background-color rgba(20, 40, 240, 0.6)
 	:display block
-	:width 30em
-	:height 39em
+	:width 39em
+	:height 40em
 	:position relative
 	:float right
-	:padding
-		:top 1em
-		:left 5em
-		:right 4em
+	p
+		:padding
+			:left 5em
+			:right 4em
 	+border-top-right-radius(2em)
 	@include box-shadow(rgba(20, 20, 20, 0.6) -1px -1px 20px)
 
+.button
+	:display block
+	:width 3em
+	:position absolute
+	:margin-left -3em
+	:background-color rgba(20, 40, 240, 0.6)
+	:z-index 1
+	p
+		@include rotate(-90deg)
+		:position relative
+	&:hover
+		:background-color rgba(20, 40, 240, 0.7) !important
+		:color gold !important
+
 .img
-	:background-color none
 	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
 	:width 46em
 	:height 40em
 	:float left
 	:position relative
 	+border-top-left-radius(12em)
-#img-about
-	:background-color rgba(20,20,20,.6)
-#img-resources
-	:background-color rgba(20,20,20,.6)
+	:background-color rgba(20,20,20,0.6)
