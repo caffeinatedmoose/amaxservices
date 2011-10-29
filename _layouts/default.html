@@ -9,12 +9,14 @@
 <div id="header">
 	<span id=title>Amax Services, LLC. </span>
 	<div id="nav">
-		<a href="/"> about </a>
-		<a href="resources.html"> resources </a>
+		<span id="link"><a href="/"> about </a></span>
+		<span>|</span>
+		<span id="link"><a href="resources.html"> resources </a></span>
 	</div>
 </div>
 <div class="content">
-  			{{ content }}
+	 <div class="img" id="img-{{ page.body_id }}"></div>
+	{{ content }}
 </div>
 
 

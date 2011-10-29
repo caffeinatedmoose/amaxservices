@@ -23,10 +23,26 @@
 
 
 #nav
-	:margin-left 2cm
 	:position relative
+	:left 5em
 	:z-index 2
 	:display inline
+	span
+		:padding-left 1em
+
+.img
+	:background-color none
+	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
+	:width 20em
+	:height 30em
+	:float left
+	:position relative
+	:left 4em
+	:top 4em
+#img-about
+	:background-color red
+#img-resources
+	:background-color green
 
 .content
 	:background-color rgba(200, 200, 200, .7)
