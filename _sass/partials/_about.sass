@@ -1,12 +1,19 @@
-.info
-	:background-color blue
-	:display block
-	:width 20em
-	:position relative
-	:float left
-	
 .img
 	:background-color red
 	:width 5em
 	:height 5em
+	:float left
+	
+.info
+	:background-color rgba(20, 140, 15, 0.7)
+	:display block
+	:width 30em
+	:height 39em
+	:position relative
 	:float right
+	:padding
+		:top 1em
+		:left 5em
+		:right 4em
+	+border-top-right-radius(2em)
+	@include box-shadow(rgba(20, 140, 15, 1) -1px -1px 20px)
