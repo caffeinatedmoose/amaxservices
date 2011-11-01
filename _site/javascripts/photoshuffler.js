@@ -1,5 +1,5 @@
-  var gblPhotoShufflerDivId = "photodiv";
-  var gblPhotoShufflerImgId = "photoimg"; 
+  var gblPhotoShufflerDivId = "resources-DivPic";
+  var gblPhotoShufflerImgId = "resources-img"; 
   var gblImg = new Array(
     "http://static.flickr.com/53/149047107_78ebdaf8bc.jpg?v=0",
     "http://static.flickr.com/48/149048049_3523869ba4.jpg?v=0",
