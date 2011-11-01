@@ -1,4 +1,3 @@
-require 'rubygems'
-require 'bundler'
-Bundler.require
-run FistFace
+require "rack/jekyll"
+
+run Rack::Jekyll.new
