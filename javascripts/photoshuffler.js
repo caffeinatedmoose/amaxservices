@@ -1,31 +1,5 @@
-
-
-  //
-  // CSS Photo Shuffler v1.0 by
-  //   Carl Camera
-  //   http://iamacamera.org 
-  //
-  // SetOpacity Function and inpiration from Photo Fade by
-  //   Richard Rutter
-  //   http://clagnut.com
-  //
-  // License: Creative Commons Attribution 2.5  License
-  //   http://creativecommons.org/licenses/by/2.5/
-  //
-
-  // Customize your photo shuffle settings
-  // 
-  // * Surround the target <img /> with a <div>. specify id= in both
-  // * set background-repeat:no-repeat in CSS for the div
-  // * The first and final photo displayed is in the html <img> tag
-  // * The array contains paths to photos you want in the rotation. 
-  //   If you want the first photo in the rotation, then it's best to
-  //   put it as the final array image.  All photos must be same dimension
-  // * The rotations variable specifies how many times to repeat array.
-  //   images. zero is a valid rotation value.
-
-  var gblPhotoShufflerDivId = "photodiv";
-  var gblPhotoShufflerImgId = "photoimg"; 
+  var gblPhotoShufflerDivId = "resources-DivPic";
+  var gblPhotoShufflerImgId = "resources-img"; 
   var gblImg = new Array(
     "http://static.flickr.com/53/149047107_78ebdaf8bc.jpg?v=0",
     "http://static.flickr.com/48/149048049_3523869ba4.jpg?v=0",

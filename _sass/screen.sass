@@ -7,8 +7,10 @@
 @import compass/css3/transform
 @import compass/css3/transition
 @import partials/default
-@import partials/about
-@import partials/resources
+@font-face
+	font-family: "Quicksand_Light-webfont"
+	src: url("/images/Quicksand_Light-webfont.eot")
+	src: local("☺"), url("/images/Quicksand_Light_Oblique-webfont.woff") format("woff"), url("/images/Quicksand_Light-webfont.svg#Quicksand_Light") format("svg"), url("images/Quicksand_Light-webfont.ttf") format("ttf")
 
 *
 	:margin 0
@@ -17,23 +19,26 @@
 html
 	:height 100%
 
-body	
-	:font 13.34px helvetica, arial, clean, sans-serif
+body
+	:background
+		:color rgb(18, 12, 90)
+		:size 100%
+	:color #252525
+	:font 100% ", Helvetica Neue", Helvetica, "Lucida Grande", Verdana, Georgia, Sans-serif
 	:height 100%
+	:line-height 1.625em
+	:min-width 60em
 	:text-align center
-	:background-color white
-	:background-size 100%
 
-h1	
-	:font 33px helvetica nueve, clean, sans-serif !important
-		:size large
+h1
+	:font
+		:family Quicksand_Light-webfont
+		:size 32px
 	:padding
-		:top 1em
-		:bottom 0.5em
+		:top 0.75em
+		:bottom 0.25em
 
 a
-	:color silver
 	:text-decoration none
 	
 p
-	:font 20px helvetica, arial, clean, sans-serif
