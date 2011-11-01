@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Quicksand_Light';
+    src: url('https://s3.amazonaws.com/fonts-amax/Quicksand_Light/Quicksand_Light.eot');
+    src: url('https://s3.amazonaws.com/fonts-amax/Quicksand_Light/Quicksand_Light.eot?#iefix') format('embedded-opentype'),
+         url('https://s3.amazonaws.com/fonts-amax/Quicksand_Light/Quicksand_Light.woff') format('woff'),
+         url('Quicksand_Light') format('truetype'),
+         url('https://s3.amazonaws.com/fonts-amax/Quicksand_Light/Quicksand_Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
