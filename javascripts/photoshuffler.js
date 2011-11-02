@@ -1,9 +1,9 @@
   var gblPhotoShufflerDivId = "resources-DivPic";
   var gblPhotoShufflerImgId = "resources-img"; 
   var gblImg = new Array(
-    "http://static.flickr.com/53/149047107_78ebdaf8bc.jpg?v=0",
-    "http://static.flickr.com/48/149048049_3523869ba4.jpg?v=0",
-    "http://static.flickr.com/56/149047438_fabcf2f7ce.jpg?v=0"
+    "/images/red.jpg",
+    "/images/blue.jpg",
+    "/images/green.jpg"
     );
   var gblPauseSeconds = 7.25;
   var gblFadeSeconds = .85;

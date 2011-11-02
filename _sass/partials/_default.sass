@@ -1,7 +1,6 @@
 #header
 	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
 	:background-color rgba(18, 12, 200, 0.4)
-	:display block
 	:height 7%
 	:margin-bottom 5.75%
 	:position relative
@@ -25,22 +24,27 @@
 	:margin 0 auto 0 auto
 	:width 70em
 
-.image, img
-	:background
-		:color rgba(20,20,20,0.6)
-		:repeat no-repeat
+#left
 	:float left
 	:height 35em
 	:position absolute
-	:width 45%
-	:z-index 1
+	:width 70em
+	
+.image
+	:background
+		:color rgba(20,20,20,0.6)
+		:repeat no-repeat
+	:height 35em
+	
+#about
+	.image
+		:background-image url('/images/red.jpg') !important
 	img
-		:width 70em
+		display: none
 
 #content
 	@include box-shadow(rgba(10, 10, 10, 0.8) -5px 5px 20px)
 	:background-color rgba(18, 12, 120, 0.6)
-	:display block
 	:float right
 	:height 35em
 	:position relative
