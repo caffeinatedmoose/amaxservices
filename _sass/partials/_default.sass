@@ -14,19 +14,18 @@
 		:font 28px Quicksand_Light, helvetica nueve, clean, sans-serif
 		:padding 8.75px 0px 0px 12px
 		
-#main, .image, img, #content
+#main, #left, .image, img, #content
+	:height 35em
 	+border-top-left-radius(12em)
 	+border-top-right-radius(2em)
 
 #main
 	@include box-shadow(rgba(18, 12, 140, 1.0) -5px -5px 200px)
-	:height 35em
 	:margin 0 auto 0 auto
 	:width 70em
 
 #left
 	:float left
-	:height 35em
 	:position absolute
 	:width 70em
 	
@@ -34,7 +33,6 @@
 	:background
 		:color rgba(20,20,20,0.6)
 		:repeat no-repeat
-	:height 35em
 	
 #about
 	.image
@@ -46,7 +44,6 @@
 	@include box-shadow(rgba(10, 10, 10, 0.8) -5px 5px 20px)
 	:background-color rgba(18, 12, 120, 0.6)
 	:float right
-	:height 35em
 	:position relative
 	:width 55%
 	:z-index 2
