@@ -1,4 +1,9 @@
 desc 'Running Jekyll with --server --auto opition'
-task :dev do
+task :j do
   system('jekyll --server --auto')
+end
+
+desc 'Running Compass Watch'
+task :c do
+  sh 'compass watch'
 end

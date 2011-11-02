@@ -1,54 +1,49 @@
 #header
-	:background-color rgba(76, 76, 139, 0.7)
+	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
+	:background-color rgba(18, 12, 200, 0.4)
 	:display block
-	:height 6%
+	:height 7%
 	:margin-bottom 5.75%
-	:padding 4px 0px 0px 12px
 	:position relative
 	:text-align left
 	:width 66%
 	:z-index 1
-	+border-top-right-radius(1em)
 	+border-bottom-right-radius(12em)
 	&:hover
-		@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
+		:background-color rgba(48, 40, 255, 0.5)
 	p
-		:color white
-		:font 25px helvetica nueve, clean, sans-serif
-
-#main
-	:background-color rgba(200, 200, 200, .7)
-	:display block
-	:height 35em
-	:margin 0em auto 0em auto
-	:position relative
-	:width 70em
+		:font 28px Quicksand_Light, helvetica nueve, clean, sans-serif
+		:padding 8.75px 0px 0px 12px
+		
+#main, .image, img, #content
 	+border-top-left-radius(12em)
 	+border-top-right-radius(2em)
-	+border-bottom-left-radius(1em)
-	+border-bottom-right-radius(1em)
 
-.image
-	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
-	:background-color rgba(20,20,20,0.6)
+#main
+	@include box-shadow(rgba(18, 12, 140, 1.0) -5px -5px 200px)
+	:height 35em
+	:margin 0 auto 0 auto
+	:width 70em
+
+.image, img
+	:background
+		:color rgba(20,20,20,0.6)
+		:repeat no-repeat
 	:float left
 	:height 35em
-	:position relative
-	:width 45%
-	+border-top-left-radius(12em)
-	img
-		:height 100%
-		:width 100%
-		+border-top-left-radius(12em)
+	:position absolute
+	:width 70em
+	:z-index 1
 
 #content
-	@include box-shadow(rgba(20, 20, 20, 0.6) -1px -1px 20px)
-	:background-color rgba(9, 10, 92, 0.5)
+	@include box-shadow(rgba(10, 10, 10, 0.8) -5px 5px 20px)
+	:background-color rgba(18, 12, 120, 0.6)
 	:display block
 	:float right
 	:height 35em
 	:position relative
-	:width 55%
+	:width 38.5em
+	:z-index 2
 	p
 		:font
 			:family Quicksand_Light
@@ -57,9 +52,7 @@
 			:top 2%
 			:right 5%
 			:left 5%
-	+border-top-right-radius(2em)
-	&:hover
-		@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
+	+border-top-left-radius(2em)
 
 .navigation
 	:color rgb(240, 240, 240)
@@ -69,7 +62,6 @@
 	a
 		:background-color rgba(90, 85, 200, 0.6)
 		:border solid 1px rgba(20, 15, 200, 0.4)
-		:color rgb(240, 240, 240)
 		:padding 5px
 		+border-radius(0.5em)
 		&:hover
