@@ -1,6 +1,6 @@
 #header
 	@include box-shadow(rgba(20, 20, 20, 1.0) 0px 0px 20px)
-	:background-color rgba(18, 12, 200, 0.4)
+	:background-color #8A8A8A
 	:display block
 	:font 28px Quicksand_Light, helvetica nueve, clean, sans-serif
 	:height 7%
@@ -12,7 +12,7 @@
 	:z-index 1
 	+border-bottom-right-radius(12em)
 	&:hover
-		:background-color rgba(48, 40, 255, 0.5)
+		:background-color #999999
 		
 #main, #left, .image, img, #content
 	:height 35em
@@ -20,7 +20,7 @@
 	+border-top-right-radius(2em)
 
 #main
-	@include box-shadow(rgba(18, 12, 140, 1.0) -5px -5px 200px)
+	@include box-shadow(#8A8A8A -5px -5px 200px)
 	:margin 0 auto 0 auto
 	:width 70em
 
@@ -36,13 +36,14 @@
 	
 #about
 	.image
-		:background-image url('/images/red.jpg') !important
+		:background-color #999999
+		:background-image url('/images/blue.jpg')
 	img
 		display: none
 
 #content
 	@include box-shadow(rgba(10, 10, 10, 0.8) -5px 5px 20px)
-	:background-color rgba(18, 12, 120, 0.6)
+	:background-color #3D3D3D
 	:float right
 	:position relative
 	:width 55%
@@ -63,12 +64,10 @@
 	:margin 32em 0% 0% 30%
 	:position absolute
 	a
-		:background-color rgba(90, 85, 200, 0.6)
-		:border solid 1px rgba(20, 15, 200, 0.4)
+		:background-color #808080
 		:padding 5px
 		+border-radius(0.5em)
 		&:hover
 			@include box-shadow(rgba(20, 15, 200, 0.3) -1px -1px 20px)
-			:background-color rgba(90, 85, 200, 0.7)
-			:border solid 1px rgba(20, 15, 200, 0.2)
+			:background-color #8A8A8A
 			:color white
