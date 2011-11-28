@@ -1,23 +1,14 @@
-/* #about, #resources
-/*	:color rgb(20, 20, 20)
-/*	:font-size 20px
-/* ^ omitted because you should just give the "p" elements in screen.sass a text color
-	
-/* h1
-/* ^ moved to screen.sass because "h1" is a very general element like "body" or "p"
-
-
-/* ---------------------- */
-/*				New Code				*/
-
 #title
-	:font-size 28.2px
 	:padding-top 1.2em
 	:text-align center
 	:width 100%
+	p
+		:font
+			:style italic
+		:padding 0.8em
 
 #content
-	:margin 20% auto 0 auto
+	:margin 16% auto 0 auto
 	:padding
 		:left 1em
 		:right 1em
@@ -25,12 +16,17 @@
 	
 #about
 	:margin-top 0%
+	a
+		:top 10px
 
 #resources
 	:margin-top 100%
+	a
+		:top 10px
 	
 #footer
 	:height auto
-	:margin-top 20%
+	:margin-top 24%
+	:padding-bottom 0.7em
 	:text-align center
 	:width 100%

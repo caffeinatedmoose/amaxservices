@@ -7,7 +7,6 @@
 @import compass/css3/transform
 @import compass/css3/transition
 @import partials/default
-@import lib/Quicksand_Light
 	
 *
 	:margin 0
@@ -17,9 +16,7 @@ html
 	:height 100%
 
 body
-	:background-color none
-	/*:color rgb(230, 230, 230)
-	/*^ omitted because it seemed unnecessary
+	:background-color #EDE1C4
 	:font 100% ", Helvetica Neue", Helvetica, "Lucida Grande", Verdana, Georgia, Sans-serif
 	:height 100%
 	:line-height 1.625em
@@ -27,17 +24,29 @@ body
 	:-webkit-font-smoothing antialiased
 
 h1 
-	:font-family adobe-garamond-pro
 	:color #050505
-	:font-weight bold
+	:font
+		:family adobe-garamond-pro
+		:size 48px
+		:weight bold
+	:letter-spacing 1px
 	
-h2
-	:font-family adobe-garamond-pro
+h2		
 	:color #050505
-	:font-weight bold
+	:font
+		:family adobe-garamond-pro
+		:size 24px
+		:weight bold
+	:padding-bottom 0.4em
 
 
-a
+a	
+	:color #0000FF
+	:text-decoration underline
+	&:hover
+		:color #000092
+	&:active
+		:color #0000FF
 	
 p
 	:font-family chaparral-pro
