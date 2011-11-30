@@ -1,10 +1,10 @@
 #title
-	:position fixed
-	:top 3em
-	:left 0
+	:position relative
+	:margin-top 2.6em
 	:color rgb(255, 255, 255)
 	:background-color rgba(0, 0, 0, 0.9)
 	:border-top-right-radius 20px 20px
+	:height 1.7em
 	:border-bottom-right-radius 20px 20px
 	:padding
 		:bottom 1.2em
@@ -46,25 +46,41 @@
 	
 #footer
 	:background-color rgba(0, 0, 0, 0.9)
-	:border-top-left-radius 20px 20px
-	:height auto
-	:margin-top 20%
+	:border-top-left-radius 20px
+	:height 2em
+	:margin-top 16%
 	:padding-top 1em
 	:padding-bottom 1em
 	:position relative
-	:left 16em
-	:top 0
 	:padding-left 2em
 	:text-align left
-	:width 100%
+	:max-width 100%
+	:overflow hidden
+	:margin-left 16em
 	
-#image1, #image2
-	:border-radius 20px
-	:margin-left 48em
+#img1, #img2
+	:border-top-left-radius 20px
+	:border-top-right-radius 20px
+	:border-bottom-left-radius 20px
+	:border-bottom-right-radius 20px
+	:width 10em
+	:height 10em
+	:background-color black
+	:background-position top center
+	:background-repeat no-repeat
+	:background-size 100%100%
+	:float right
+	:position relative
+	:margin-top -10em
+	:box-shadow 10px 10px 20px 0px black
 	
+#img1
+	:background-image url('/images/IMG_0255.jpg')
 
-#image1
-	:margin-top -16em
-	
-#image2
-	:margin-top -18em
+#img2
+	:background-image url('/images/IMG_0254.jpg')
+
+.img
+	p
+		:position relative
+		:left -9999em
