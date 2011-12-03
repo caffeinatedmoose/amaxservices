@@ -17,9 +17,7 @@ html
 	:width 100%
 
 body
-	:background-image url('/images/water-bg.jpg')
-	:background-repeat no-repeat
-	:background-attachment fixed
+	:background-color white
 	:font 100% ", Helvetica Neue", Helvetica, "Lucida Grande", Verdana, Georgia, Sans-serif
 	:height 100%
 	:width 100%
@@ -27,7 +25,7 @@ body
 	:min-width 60em
 	:-webkit-font-smoothing antialiased
 
-h1, #title p
+h1, #title p,
 	:color white
 	:float left
 	:font
@@ -38,7 +36,7 @@ h1, #title p
 	:padding-left 11px
 	
 h2		
-	:color white
+	:color rgb (20, 20, 20)
 	:font
 		:family adobe-garamond-pro
 		:size 24px
@@ -47,18 +45,32 @@ h2
 
 
 a	
-	:color rgb(140, 140, 140)
+	:background-color rgb(20, 20, 20)
+	:border-radius 10px
+	:color rgb(255, 255, 255)
+	:font
+		:family adobe-garamond-pro
+		:size 20px
+	:margin-top 10px
+	:padding 5px
 	:text-decoration underline
 	&:hover
-		:color rgb(80, 80, 80)
+		:color rgb(200, 200, 200)
 	&:active
-		:color rgb(20, 20, 20)
+		:color rgb(160, 160, 160)
 	
 p
 	:font-family chaparral-pro
-	:color white
+	:color rgb(40, 40, 40)
 	:font-size 20px
+	:padding-bottom 10px
 	
 img
 	:border-radius 20px
 	:box-shadow 5px 10px rgba(0, 0, 0, 0.6)
+	
+#footer p
+	:color white
+	:font
+		:family adobe-garamond-pro
+		:size 30px
